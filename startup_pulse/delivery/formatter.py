@@ -2,8 +2,7 @@ import html
 import re
 from datetime import datetime
 
-import config
-import storage
+from startup_pulse.core import config, storage
 
 # Section definitions: (agent_name, display_title, color)
 SECTIONS = [
@@ -163,7 +162,7 @@ def format_digest(date: datetime | None = None) -> tuple[str, str]:
 {sections_html}
             <!-- Footer -->
             <div style="border-top:1px solid #e8e8e8;margin-top:10px;padding-top:18px;text-align:center;">
-                <p style="font-size:11px;color:#aaa;margin:0;">Curated by Personal AI Assistant</p>
+                <p style="font-size:11px;color:#aaa;margin:0;">Curated by StartupPulse</p>
             </div>
         </div>
 
